@@ -25,7 +25,7 @@ public class MathUtility {
     // Quy ước 0! = 1! = 1
     // Bài này chỉ tính n từ 1 - 21 vì n = 21 thì 21! vượt quá long
     public static long getFactorial(int n) {
-        long product = 1; // Tích - kết quả phép nhân
+        long product = 10; // Tích - kết quả phép nhân
         if (n < 0 || n > 20)
             throw new IllegalArgumentException("Invalid n, n must be between 0 to 20");
         if (n == 0 || n == 1)
