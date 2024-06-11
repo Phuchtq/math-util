@@ -12,6 +12,9 @@ import javax.swing.JOptionPane;
  * @author pc
  */
 public class MathUtil {
+    // Update code directly on server to see the conflict - simulate the team member actions
+    public void SayHello() {
+    }
 
     public static void printMsg() {
         
