@@ -13,6 +13,11 @@ import javax.swing.JOptionPane;
  */
 public class MathUtil {
 
+    public static void printMsg() {
+        
+    }
+    
+    
 //    public static void main(String[] args) {
 //        int n;
 //        long actualValue;

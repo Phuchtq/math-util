@@ -51,3 +51,11 @@ public class MathUtility {
 // 1! = 1
 // n! = n * (n - 1)!
 // Đệ quy: gọi lại chính mình với 1 quy mô nhỏ hơn - recursion
+
+// Nếu ta xài CI trong project thì lợi điểm:
+// Mỗi lần sửa code, dev ko cần mất súc test lại code mình đúng sai do cơ chế CI tự động sẽ lo
+// Run test case của CI sẽ lo nên toàn bộ việc test lại code đc tự động hóa 
+// PM chỉ cần nhìn lại xanh là đủ - biết rằng việc sửa code đã ngon vì biết rằng đã pass bộ test
+// Việc test lại những hàm đã từng test gọi là Regression Testing - Kiểm thử hồi quy
+
+// Ko nên sửa code trực tiếp trên server
