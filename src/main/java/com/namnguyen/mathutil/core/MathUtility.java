@@ -31,11 +31,23 @@ public class MathUtility {
             throw new IllegalArgumentException("Invalid n, n must be between 0 to 20");
         if (n == 0 || n == 1)
             return 1;
-        for (int i = 1; i <= n; i++) 
-            product *= i; // Thuật toán tiếp chiêu nhân dồn, con heo đất
+        //for (int i = 1; i <= n; i++) 
+            //product *= i; // Thuật toán tiếp chiêu nhân dồn, con heo đất
                           // Ốc bu nhồi thịt
-        return product;
+                          
+         // Đệ quy - recursion: Gọi là chính mình với 1 quy mô khác
+        return n * getFactorial(n - 1);    
     }
     
     
 }
+
+
+// 5! = 1 * 2 * 3 * 4 * 5
+// 5! = 5 * 4!
+// 4! = 4 * 3!
+// 3! = 3 * 2!
+// 2! = 2 * 1!
+// 1! = 1
+// n! = n * (n - 1)!
+// Đệ quy: gọi lại chính mình với 1 quy mô nhỏ hơn - recursion
